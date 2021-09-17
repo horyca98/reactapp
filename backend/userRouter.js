@@ -14,7 +14,6 @@ router.get('/getUserById',async function(req,res){
 })
 router.post('/addUser',async function(req,res){
     const data = req.body
-    console.log(data)
     const firstname = data.firstname
     const lastname = data.lastname
     const role = data.role

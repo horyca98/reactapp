@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card } from "react-bootstrap";
+import { Card} from "react-bootstrap";
 import styles from './UserCard.module.css'; // Import css modules stylesheet as styles
 import "./UserCard.css";
 import { Link } from "react-router-dom";
@@ -31,6 +31,7 @@ const UserCard = (props) => {
         </Card.Body>
       </Card>
     </Link>
+    
   );
 };
 export default UserCard;
