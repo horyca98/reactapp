@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import styles from './UserDetails.module.css'; // Import css modules stylesheet as styles
 import "./UserCard.css";
 const UserDetails = (props) => {
   // can also retrieve details from url query via server
@@ -12,7 +13,7 @@ const UserDetails = (props) => {
     img = String.fromCharCode(...new Uint8Array(avatarData));
   }
   return (
-    <Card className="card-style" style={{ width: "26rem" }}>
+    <Card className={styles.cardStyle}>
       <Card.Img
         variant="top"
         src={`data:image/jpeg;base64,${img}`}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Card } from "react-bootstrap";
+import styles from './UserCard.module.css'; // Import css modules stylesheet as styles
 import "./UserCard.css";
 import { Link } from "react-router-dom";
 
@@ -12,7 +13,7 @@ const UserCard = (props) => {
   }
   return (
     <Link to={{ pathname: "/details", state: props.user }}>
-      <Card className="card-style" style={{ width: "26rem" }}>
+      <Card className={styles.cardStyle} >
         <Card.Img
           variant="top"
           src={`data:image/jpeg;base64,${img}`}
