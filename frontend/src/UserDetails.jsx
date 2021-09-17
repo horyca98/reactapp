@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import styles from './UserDetails.module.css'; // Import css modules stylesheet as styles
+import styles from "./UserDetails.module.css"; // Import css modules stylesheet as styles
 import "./UserCard.css";
 const UserDetails = (props) => {
   // can also retrieve details from url query via server
