@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {Card} from "react-bootstrap"
 import './UserCard.css'
 const UserDetails = (props)=>{
@@ -18,9 +18,9 @@ const UserDetails = (props)=>{
         <Card.Body>
             <Card.Title>{details.firstname} {details.lastname}</Card.Title>
             <Card.Text>
-            Role: {details.role}
-            <br />
-            Location:{details.location}
+                Role: {details.role}
+                <br />
+                Location:{details.location}
             </Card.Text>
         </Card.Body>
     </Card>
